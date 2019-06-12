@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Record, plot, and execute files depending on distance inputs 
+# Record, plot, and execute commands depending on distance inputs 
 
 import serial
 import RPi.GPIO as GPIO
@@ -103,27 +103,22 @@ def animate(x):
         print(input)
         #read = int(input)
                     #print(input)
-        if read != 1000:
-                 ws.append(['',i,read,'inches'])
-                 i = i +1
+        #if read != 1000:
+                 
                     #x = x + 2
-        if read == 1000:
-                import One.py
-                #elif read == 2:
-                #    execfile(Two.py)
-                #else:
-                #    execfile(Three.py)
-                   # if read == 4
-                #    execfile(Zone4)
-                   # if read == 5
-                #    execfile(Zone5)
-                   # if read == 0
-                #    execfile(Begin)
+        
+    #if read is not equal to 1000 then the trip wire has been activated
+        if read != 1000:
+            ws.append(['',i,read,'inches'])
+            i = i +1
+        elif read == 2:
+            print("Place your desired code here")  
+        #else:
+         #   print("The Distance was not 2 inches and the trip wire was not activated")  
                 #x = x + 2
         wb.save("DistanceRecord.xlsx")
             #else:
              #   x = x - 1
-        #print(x)
     #else:
       #     ard.close()
 #start the animation process

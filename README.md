@@ -11,10 +11,8 @@ The second phase involved translating the distance into an approximate location 
 To make life easier for the researcher the distance collected is recorded on an .xlxs file in the background and can be opened after the experiment is completed. The researcher can also track the progress using live graphs on the Raspberry Pi that update after receiving new distance readings.
 
 ## Getting Started
-This project requires an app created through MIT App Inventor that cannot be shared since it was a part of my undergraduate research. However, any executable Python code can take the place of the one presently being used. Just find where the code says import One.py and change it to a different file of your choosing. 
-```
-import One.py
-```
+This project requires an app created through MIT App Inventor that cannot be shared since it was a part of my undergraduate research. However, any Python command can be used in its place. 
+![Possible Python Change]()
   ### Testing
   The Arduino code sends out distance measurements unless the laser beam is directed towards the photoresistor. No two photoresistors     work exactly the same so some manipulation may have to be done in the Arduino code.
   ```

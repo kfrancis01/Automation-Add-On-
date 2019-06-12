@@ -1,6 +1,8 @@
 # Automation-Add-On
 Automatically execute python scripts, collect data, and create live graphs depending on an object's position.  
 
+## NOTE: This project was designed as a proof of concept since the full set up for appropriate testing was not available
+
 ## How It Works
 This project was designed as an add on for my research project. I needed to determine the placement of an object on a table after it was rolled into place. In order to accomplish this I used an Arduino compatible laser and photoresistor to create a trip wire. This was combined with a ultrasound distance sensor to determine and print the distance to the serial. 
 

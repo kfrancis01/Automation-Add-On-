@@ -108,7 +108,7 @@ def animate(x):
                     #x = x + 2
         
     #if read is not equal to 1000 then the trip wire has been activated
-        if read != 1000:
+        if read == 1000:
             ws.append(['',i,read,'inches'])
             i = i +1
         elif read == 2:

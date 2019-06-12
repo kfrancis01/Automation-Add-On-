@@ -107,12 +107,14 @@ def animate(x):
                  
                     #x = x + 2
         
-    #if read is not equal to 1000 then the trip wire has been activated
-        if read == 1000:
+#if read is not equal to 1000 then the trip wire has been activated
+        if read != 1000:
             ws.append(['',i,read,'inches'])
             i = i +1
         elif read == 2:
-            print("Place your desired code here")  
+            print("Zone Two") #place desired command here
+        elif read == 3:
+            print("Zone Three")
         #else:
          #   print("The Distance was not 2 inches and the trip wire was not activated")  
                 #x = x + 2

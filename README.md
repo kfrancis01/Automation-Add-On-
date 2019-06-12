@@ -49,11 +49,11 @@ pip3 install openpyxl --user
 ```
 Numpy for Python allows us to create and manipulate arrays
 ```
-sudo apt-get install python3-numpy
+>> sudo apt-get install python3-numpy
 ```
 In order to view the .xlxs file from the Raspberry Pi
 ```
-sudo apt-get install libreoffice 
+>> sudo apt-get install libreoffice 
 ```
 #### Arduino
 The Arduino code was created using the online Arduino Editor IDE. Using this platform the Arduino zip folder simple needs to be uploaded. For your Arduino device to be recognized you must download the Arduino create agent to your PC.
@@ -65,7 +65,7 @@ Download the Distance_Project onto the Arduino and connect it to the Raspberry u
 After installing the Python code onto the Raspberry Pi Desktop, you must first make it executable from the command line.
 Navigate to the Desktop in the command line then use:
 ```
-chmod +x DistanceProject.py
+>> chmod +x DistanceProject.py
 ```
 This will allow you to simply locate the file in the Raspberry Pi Desktop and execute by double clicking on it. 
 You can end the program by closing the figure window or entering ctrl + c. Once the program has stopped an updated .xlxs file called DistanceRecorded will be uploaded to the desktop. Opening the file will show the time and date at the top left corner as well as the distances gathered.

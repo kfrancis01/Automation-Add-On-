@@ -12,7 +12,9 @@ To make life easier for the researcher the distance collected is recorded on an 
 
 ## Getting Started
 This project requires an app created through MIT App Inventor that cannot be shared since it was a part of my undergraduate research. However, any Python command can be used in its place. 
-![Possible Python Change]()
+
+  ![Possible Python Change](http://g.recordit.co/oakSKnxkT8.gif)
+
   ### Testing
   The Arduino code sends out distance measurements unless the laser beam is directed towards the photoresistor. No two photoresistors     work exactly the same so some manipulation may have to be done in the Arduino code.
   ```

@@ -24,6 +24,9 @@ import One.py
 * Breadboard
 * A male to B male USB cable
 
+### Testing
+The Python code can be tested by redirecting the laser from the photoresistor and running the code. 
+
 ## Required Libraries and Packages 
 
 #### Raspberry Pi

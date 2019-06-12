@@ -9,10 +9,21 @@ The second phase involved translating the distance into an approximate location 
 To make life easier for the researcher the distance collected is recorded on an .xlxs file in the background and can be opened after the experiment is completed. The researcher can also track the progress using live graphs on the Raspberry Pi that update after receiving new distance readings.
 
 ## Getting Started
-This project requires an app created through MIT App Inventor that can not be shared since it was a part of my undergraduate research. However, any executable Python code can take the place of the one presently being used. 
+This project requires an app created through MIT App Inventor that can not be shared since it was a part of my undergraduate research. However, any executable Python code can take the place of the one presently being used. Just find where the code says import One.py and change it to a different file of your choosing. 
 ```
+import One.py
+```
+### Hardware
+* Arduino (Uniroi) Uno
+* Raspberry Pi 3 B
+* 2 pin anti-reverse cable
+* Photoresistor
+* Sunfounder Laser Emitter
+* 10 ohm resistor
+* HC-SR04 Ultrasonic Sensor
+* Breadboard
+* A male to B male USB cable
 
-```
 ## Required Libraries and Packages 
 
 #### Raspberry Pi
@@ -24,6 +35,10 @@ pip3 install matplotlib --user
 An .xlxs can later be downloaded onto a laptop and opened using excel. In order to create a formattable table of data openpyxl was installed
 ```
 pip3 install openpyxl --user
+```
+Numpy for Python allows us to create and manipulate arrays
+```
+sudo apt-get install python3-numpy
 ```
 In order to view the .xlxs file from the Raspberry Pi
 ```
@@ -42,3 +57,4 @@ Navigate to the Desktop in the command line then use
 chmod +x DistanceProject.py
 ```
 This will allow you to simply locate the file in the Raspberry Pi Desktop and execute by double clicking on it. 
+You can end the program by closing the figure window or entering ctrl + c. Once the program has stopped an updated .xlxs file called DistanceRecorded will be uploaded to the desktop. Opening the file will show the time and date at the top left corner as well as the distances gathered.

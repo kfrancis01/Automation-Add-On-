@@ -15,6 +15,20 @@ This project requires an app created through MIT App Inventor that can not be sh
 ```
 import One.py
 ```
+  ### Testing
+  The Arduino code sends out distance measurements unless the laser beam is directed towards the photoresistor. No two photoresistors     work exactly the same so some minpulatino may have to be done in the Arduino code.
+  ```
+  if (light < 900)
+  ```
+  print out the value for light and find the value given when the laser beam is directed towards the photoresistor. Then reset the         appove portion of the code appropriately.
+  
+  In the Python code the external file is only imported when the laser beam is directed towards the photoresistor. This is only for       testing purposes to make sure the file can be executed. Otherwise an error will appear during the attempt. 
+  ```
+  if read == 1000:
+     import One.py
+  ```
+  Once it is determined that the file can be executed the value 1000 in the portion of the code above can be changed to any other         distance output. 
+
 ### Hardware
 * Arduino (Uniroi) Uno
 * Raspberry Pi 3 B
@@ -25,9 +39,6 @@ import One.py
 * HC-SR04 Ultrasonic Sensor
 * Breadboard
 * A male to B male USB cable
-
-### Testing
-The Python code can be tested by redirecting the laser from the photoresistor and running the code. 
 
 ## Required Libraries and Packages 
 

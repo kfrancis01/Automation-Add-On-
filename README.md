@@ -22,12 +22,7 @@ import One.py
   ```
   print out the value for light and find the value given when the laser beam is directed towards the photoresistor. Then reset the         above portion of the code appropriately.
   
-  In the Python code the external file is only imported when the laser beam is directed towards the photoresistor. This is only for       testing purposes to make sure the file can be executed. Otherwise an error will appear during the attempt. 
-  ```
-  if read == 1000:
-     import One.py
-  ```
-  Once it is determined that the file can be executed the value 1000 in the portion of the code above can be changed to any other         distance output. 
+  ![Photoresistor Test](http://g.recordit.co/Nn9jbYphNq.gif) 
 
 ### Hardware
 * Arduino (Uniroi) Uno

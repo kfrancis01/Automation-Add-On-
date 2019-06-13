@@ -25,6 +25,7 @@ This project requires an app created through MIT App Inventor that cannot be sha
   ![Photoresistor Test](http://g.recordit.co/Nn9jbYphNq.gif) 
 
 ### Hardware
+![Diagram](Users\Kea\Downloads\ArduinoCircuit.png)
 [Arduino Component Connections](https://www.tinkercad.com/things/4tLGjxeFeIk-funky-krunk-juttuli/editel?tenant=circuits)
 * Arduino (Uniroi) Uno
 * Raspberry Pi 3 B

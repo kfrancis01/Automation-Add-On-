@@ -1,5 +1,5 @@
 # Automation-Add-On
-Automatically execute python scripts, collect data, and create live graphs depending on an object's position.  
+Automatically run commands, collect data, and create live graphs depending on an object's position.  
 
 **NOTE: *This project was designed as a proof of concept since the full set up for appropriate testing was not available***
 

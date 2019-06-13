@@ -25,7 +25,6 @@ This project requires an app created through MIT App Inventor that cannot be sha
   ![Photoresistor Test](http://g.recordit.co/Nn9jbYphNq.gif) 
 
 ### Hardware
-![Diagram](Users\Kea\Downloads\ArduinoCircuit.png)
 [Arduino Component Connections](https://www.tinkercad.com/things/4tLGjxeFeIk-funky-krunk-juttuli/editel?tenant=circuits)
 * Arduino (Uniroi) Uno
 * Raspberry Pi 3 B
@@ -41,7 +40,7 @@ This project requires an app created through MIT App Inventor that cannot be sha
 
 #### Raspberry Pi
 I will assume that pip has previously been installed onto the Raspberry Pi.
-In order to create the graphs, the matplotlib library was utilized. In order to avoid permission error during installation append ``--user`` at the end.
+In order to create the graphs, the matplotlib library was utilized. In order to avoid permission error during installation append `--user` at the end.
 ```Python
 >> pip3 install matplotlib --user
 ```
@@ -70,4 +69,4 @@ Navigate to the Desktop in the command line then use:
 >> chmod +x DistanceProject.py
 ```
 This will allow you to simply locate the file in the Raspberry Pi Desktop and execute by double clicking on it. 
-You can end the program by closing the figure window or entering ctrl + c. Once the program has stopped an updated .xlxs file called DistanceRecorded will be uploaded to the desktop. Opening the file will show the time and date at the top left corner as well as the distances gathered.
+You can end the program by closing the figure window or entering `ctrl + c`. Once the program has stopped an updated .xlxs file called DistanceRecorded will be uploaded to the desktop. Opening the file will show the time and date at the top left corner as well as the distances gathered.

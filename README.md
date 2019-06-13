@@ -41,7 +41,7 @@ This project requires an app created through MIT App Inventor that cannot be sha
 
 #### Raspberry Pi
 I will assume that pip has previously been installed onto the Raspberry Pi.
-In order to create the graphs, the matplotlib library was utilized
+In order to create the graphs, the matplotlib library was utilized. In order to avoid permission error during installation append ``--user`` at the end.
 ```Python
 >> pip3 install matplotlib --user
 ```

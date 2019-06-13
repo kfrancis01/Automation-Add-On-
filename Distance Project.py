@@ -14,7 +14,6 @@ import openpyxl
 #Imports for creating xlxs data file
 from openpyxl import Workbook
 from openpyxl.styles import Color, Side, PatternFill, Font, Border, Alignment
-from openpyxl import load_workbook
 
 # Rename and grab the active worksheet
 wb = Workbook()
@@ -63,7 +62,6 @@ def animate(x):
     input = ard.readline()
     time.sleep(0.5)
     if input != b'':
-        #print(input)
         read = int(input)
     
     #Add to distance and increment matrices
@@ -93,19 +91,7 @@ def animate(x):
         ax2.yaxis.set_ticks((0,10,20,30,40,50,60,70,80,90,100))
         ax2.set_ylim(0,100)
 
-        #x = 1
-        #while x < 6:
-        #ard = serial.Serial('/dev/ttyACM0',57600, timeout = 1)
-        #input = ard.readline()
-        #time.sleep(0.5)
-        #print(x)
-        #if input != b'':
         print(input)
-        #read = int(input)
-                    #print(input)
-        #if read != 1000:
-                 
-                    #x = x + 2
         
 #if read is not equal to 1000 then the trip wire has been activated
         if read != 1000:
@@ -115,19 +101,19 @@ def animate(x):
             print("Zone Two") #place desired command here
         elif read == 3:
             print("Zone Three")
-        #else:
-         #   print("The Distance was not 2 inches and the trip wire was not activated")  
-                #x = x + 2
+        elif read == 4:
+            print("Zone Four")
+        elif read == 5:
+            print("Zone Five")
+        elif read == 6:
+            print("Zone Six")
+
         wb.save("DistanceRecord.xlsx")
-            #else:
-             #   x = x - 1
-    #else:
-      #     ard.close()
+
 #start the animation process
 ani = animation.FuncAnimation(fig, animate, interval=200)
 plt.draw()
 plt.show()
 
-    #GPIO.cleanup()
-    #plt.close(fig=None)
+GPIO.cleanup()
 

@@ -1,7 +1,7 @@
 # Automation-Add-On
 Automatically execute python scripts, collect data, and create live graphs depending on an object's position.  
 
-#### NOTE: This project was designed as a proof of concept since the full set up for appropriate testing was not available
+**NOTE: *This project was designed as a proof of concept since the full set up for appropriate testing was not available***
 
 ## How It Works
 This project was designed as an add on for my research project. I needed to determine the placement of an object on a table after it was rolled into place. In order to accomplish this, I used an Arduino compatible laser and photoresistor to create a trip wire. This was combined with an ultrasound distance sensor to determine and print the distance to the serial. 
@@ -17,7 +17,7 @@ This project requires an app created through MIT App Inventor that cannot be sha
 
   ### Testing
   The Arduino code sends out distance measurements unless the laser beam is directed towards the photoresistor. No two photoresistors     work exactly the same so some manipulation may have to be done in the Arduino code.
-  ```
+  ```Python
   if (light < 900)
   ```
   print out the value for light and find the value given when the laser beam is directed towards the photoresistor. Then reset the         above portion of the code appropriately.
@@ -25,6 +25,7 @@ This project requires an app created through MIT App Inventor that cannot be sha
   ![Photoresistor Test](http://g.recordit.co/Nn9jbYphNq.gif) 
 
 ### Hardware
+[Arduino Component Connections](https://www.tinkercad.com/things/4tLGjxeFeIk-funky-krunk-juttuli/editel?tenant=circuits)
 * Arduino (Uniroi) Uno
 * Raspberry Pi 3 B
 * 2 pin anti-reverse cable
@@ -40,19 +41,19 @@ This project requires an app created through MIT App Inventor that cannot be sha
 #### Raspberry Pi
 I will assume that pip has previously been installed onto the Raspberry Pi.
 In order to create the graphs, the matplotlib library was utilized
-```
-pip3 install matplotlib --user
+```Python
+>> pip3 install matplotlib --user
 ```
 An .xlxs can later be downloaded onto a laptop and opened using excel. In order to create a formattable table of data openpyxl was installed
-```
-pip3 install openpyxl --user
+```Python
+>> pip3 install openpyxl --user
 ```
 Numpy for Python allows us to create and manipulate arrays
-```
+```Python
 >> sudo apt-get install python3-numpy
 ```
 In order to view the .xlxs file from the Raspberry Pi
-```
+```Python
 >> sudo apt-get install libreoffice 
 ```
 #### Arduino
@@ -64,7 +65,7 @@ The Arduino code was created using the online Arduino Editor IDE. Using this pla
 Download the Distance_Project onto the Arduino and connect it to the Raspberry using the USB. 
 After installing the Python code onto the Raspberry Pi Desktop, you must first make it executable from the command line.
 Navigate to the Desktop in the command line then use:
-```
+```Python
 >> chmod +x DistanceProject.py
 ```
 This will allow you to simply locate the file in the Raspberry Pi Desktop and execute by double clicking on it. 

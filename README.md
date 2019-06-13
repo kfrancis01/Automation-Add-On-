@@ -4,14 +4,14 @@ Automatically run commands, collect data, and create live graphs depending on an
 **NOTE: *This project was designed as a proof of concept since the full set up for appropriate testing was not available***
 
 ## How It Works
-This project was designed as an add on for my research project. I needed to determine the placement of an object on a table after it was rolled into place. In order to accomplish this, I used an Arduino compatible laser and photoresistor to create a trip wire. This was combined with an ultrasound distance sensor to determine and print the distance to the serial. 
+This project was designed as an add on for my research project. I needed to determine the placement of an object on a table after it was rolled into place. In order to accomplish this, I used an laser emitter and photoresistor to create a trip wire. This was combined with an ultrasound distance sensor to determine and print the distance to the serial. 
 
 The second phase involved translating the distance into an approximate location of the object on the table and having a phone app text to speech feature deliver an appropriate response. To accomplish this a Raspberry Pi was connected through USB to the Arduino. Depending on the reading the commands used for the Pi to phone communication was activated. The phone app would then make an appropriate response to the input. 
 
 To make life easier for the researcher the distance collected is recorded on an .xlxs file in the background and can be opened after the experiment is completed. The researcher can also track the progress using live graphs on the Raspberry Pi that update after receiving new distance readings.
 
 ## Getting Started
-This project requires an app created through MIT App Inventor that cannot be shared since it was a part of my undergraduate research. However, any Python command can be used in its place. 
+This project requires an app created through MIT App Inventor that cannot be shared. However, any Python command can be used in its place. 
 
   ![Possible Python Change](http://g.recordit.co/oakSKnxkT8.gif)
 

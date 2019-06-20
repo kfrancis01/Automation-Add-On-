@@ -1,4 +1,4 @@
-# Automation-Add-On
+# Automation Add-On
 Automatically run commands, collect data, and create live graphs depending on an object's position.  
 
 **NOTE: *This project was designed as a proof of concept since the full set up for appropriate testing was not available***
